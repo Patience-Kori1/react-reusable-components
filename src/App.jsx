@@ -1,5 +1,5 @@
 import './App.css'
-import TableComponent from './components/TableComponent'
+import TableComponent from './components/tableComponent/TableComponent'
 
 function App() {
 
