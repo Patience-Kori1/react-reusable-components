@@ -1,6 +1,6 @@
 import TrowBody from "./TrowBody"
 import TBody from "./Tbody"
-import TdataHead from "./TdataHead"
+import TrowHead from "./TrowHead"
 
 export default function TableComponent() {
     return (
@@ -8,13 +8,9 @@ export default function TableComponent() {
             <h3>Mon composant Table</h3>
             <table >
                 <thead>
-                    <TdataHead/>
-                </thead>
-                <thead>
-                    Hello
+                    <TrowHead/>
                 </thead>
                 <TBody/>
-                
             </table>
             
         </>
