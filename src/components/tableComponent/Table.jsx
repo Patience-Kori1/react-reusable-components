@@ -1,10 +1,13 @@
 import Thead from "./Thead"
 import Tbody from "./Tbody"
-export default function Table() {
+export default function Table({data}) {
+
     return(
         <table>   
             <Thead/>
-            <Tbody/>
+            <Tbody
+                data= {data}
+            />
         </table>
     )
 }

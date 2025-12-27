@@ -1,11 +1,12 @@
-export default function TdataBody() {
-    const data = ["un", "deux", "trois"]
-
+export default function TdataBody({data}) {
+   
     return (
         <>
-            {data.map((col, index) => (
+            {
+                data.map((col, index) => (
                 <td key={index}>{col}</td>
-            ))}
+                )
+            )}
         </>
     )
 }

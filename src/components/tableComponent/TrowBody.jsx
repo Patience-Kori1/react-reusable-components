@@ -1,9 +1,11 @@
 import TdataBody from "./TdataBody"
 
-export default function TrowBody() {
+export default function TrowBody({data}) {
     return (
         <tr>
-            <TdataBody/>
+            <TdataBody
+                data={data}
+            />
             
         </tr>
     )
