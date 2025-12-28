@@ -1,12 +1,19 @@
 import TdataBody from "./TdataBody"
 
 export default function TrowBody({data}) {
+
     return (
-        <tr>
-            <TdataBody
-                data={data}
-            />
+        <>
+            {data.map(
+                (row, index) => (
             
-        </tr>
+                <tr key={index}>
+                    <TdataBody
+                        row={row}  
+                    />
+                </tr>)
+                )
+            }
+        </>
     )
 }
