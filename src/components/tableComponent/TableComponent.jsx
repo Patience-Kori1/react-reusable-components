@@ -16,6 +16,7 @@ export default function TableComponent() {
     { key: "last_name", label: "NOM" },
     { key: "intern_member_id", label: "ID STAGIAIRE" },
     { key: "status", label: "AVANCÉE DU DOSSIER" },
+    { key: "action", label: "ACTION" },
     ]
 
     return (

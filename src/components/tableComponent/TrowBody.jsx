@@ -1,4 +1,5 @@
 import TdataBody from "./TdataBody"
+import TdataBodyAction from "./TdataBodyAction"
 
 export default function TrowBody({data, columns}) {
     // console.log(data)
@@ -13,6 +14,7 @@ export default function TrowBody({data, columns}) {
                         columns={columns}
                     />
                     {/* {console.log(row.id)} */}
+                    <TdataBodyAction/>
                 </tr>)
                 )
             }
