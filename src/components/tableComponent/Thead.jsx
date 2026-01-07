@@ -1,8 +1,10 @@
 import TrowHead from "./TrowHead"
-export default function Thead() {
+export default function Thead({columns}) {
     return(
         <thead>
-            <TrowHead/>
+            <TrowHead
+                columns={columns}
+            />
         </thead>
     )
 }

@@ -4,7 +4,9 @@ export default function Table({data, columns}) {
 
     return(
         <table>   
-            <Thead/>
+            <Thead
+                columns={columns}
+            />
             <Tbody
                 data= {data}
                 columns={columns}

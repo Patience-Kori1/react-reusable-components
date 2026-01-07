@@ -1,7 +1,13 @@
-export default function TdataHead () {
+export default function TdataHead ({columns}) {
+   
     return(
-        <th>
-            Hello
-        </th>
+        <>
+            {
+                columns.map((column, index)=>(
+                   
+                    <th key={index}>{column.label}</th>
+                ))
+            }
+        </>
     )
 }

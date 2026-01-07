@@ -1,8 +1,11 @@
 import TdataHead from "./TdataHead"
-export default function TrowHead() {
+export default function TrowHead({columns}) {
+    
     return(
         <tr>
-            <TdataHead/>
+            <TdataHead
+                columns={columns}
+            />
         </tr>
     )
 }
