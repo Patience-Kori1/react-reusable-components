@@ -1,5 +1,11 @@
-export default function TdataBodyAction() {
+export default function TdataBodyAction({row, columns}) {
+    
     return (
-        <td>Supprimer</td>
+        <>
+            <td key={row.id}>Supprimer {row.first_name}</td>
+            {/* {
+                console.log(row)
+            } */}
+        </>
     )
 }

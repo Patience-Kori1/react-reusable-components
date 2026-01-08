@@ -14,7 +14,10 @@ export default function TrowBody({data, columns}) {
                         columns={columns}
                     />
                     {/* {console.log(row.id)} */}
-                    <TdataBodyAction/>
+                    <TdataBodyAction
+                        row={row}  
+                        columns={columns}
+                    />
                 </tr>)
                 )
             }
