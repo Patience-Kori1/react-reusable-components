@@ -21,7 +21,7 @@ export default function TableComponent() {
 
     return (
         <>
-            <h3 className="text-3xl font-bold text-blue-600" >Mon composant Table</h3>
+            <h3>Mon composant Table</h3>
             <SearchBar/>
             <Table
                 data= {data}
