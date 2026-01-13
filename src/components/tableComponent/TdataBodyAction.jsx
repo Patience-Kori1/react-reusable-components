@@ -1,13 +1,9 @@
-export default function TdataBodyAction({row, columns}) {
+export default function TdataBodyAction({row, columns, onAction}) {
 
-    const handleClick = () => {
-        console.log("hello", row.id)
-    }
-    
     return (
         <>
             <td>
-                <button key={row.id} type="button" onClick={handleClick}>Dire Bonjour</button>
+                <button key={row.id} type="button" onClick={() => onAction(row)}>Dire Bonjour</button>
             </td>
         </>
     )

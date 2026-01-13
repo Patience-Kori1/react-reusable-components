@@ -3,6 +3,9 @@ import TdataBodyAction from "./TdataBodyAction"
 
 export default function TrowBody({data, columns}) {
     // console.log(data)
+    const handleAction = (row) => {
+        console.log("hello", row.id)
+    }
     return (
         <>
             {data.map(
@@ -17,6 +20,7 @@ export default function TrowBody({data, columns}) {
                     <TdataBodyAction
                         row={row}  
                         columns={columns}
+                        onAction={handleAction}
                     />
                 </tr>)
                 )
