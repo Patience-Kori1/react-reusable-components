@@ -19,6 +19,9 @@ export default function TableComponent() {
     { key: "action", label: "ACTION" },
     ]
 
+    const handleAction = (row) => {
+        console.log("hello", row.id)
+    }
     return (
         <>
             <h3>Mon composant Table</h3>
@@ -26,6 +29,7 @@ export default function TableComponent() {
             <Table
                 data= {data}
                 columns={columns}
+                onAction={handleAction}
             />
             <Pagination/>
         </>
