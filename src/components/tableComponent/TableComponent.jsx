@@ -1,9 +1,10 @@
 import Table from "./Table"
 import SearchBar from "./SearchBar"
 import Pagination from "./Pagination"
+import { useState } from "react"
 
 export default function TableComponent() {
-    const data = [
+     const initialData = [
     { id: 1, first_name: "Jeremie", last_name: "Chabanais", intern_member_id: 125242, status: "Aucune demande" },
     { id: 2, first_name: "Saria", last_name: "Chabanais", intern_member_id: 125242, status: "Stagiaire a initié la demande" },
     { id: 3, first_name: "Aziza", last_name: "Chabanais", intern_member_id: 125242, status: "Transmis à l'administration" },
@@ -19,9 +20,16 @@ export default function TableComponent() {
     { key: "action", label: "ACTION" },
     ]
 
+    const [data, setData] = useState(initialData)
+
     const handleAction = (row) => {
-        console.log("hello", row.id)
+      setData((prevData) =>
+        prevData.filter((item) => item.id !== row.id)
+      )
     }
+    // const handleAction = (row) => {
+    //       console.log("hello", row.id)
+    // }
     return (
         <>
             <h3>Mon composant Table</h3>
