@@ -30,6 +30,9 @@ export default function TableComponent() {
     // const handleAction = (row) => {
     //       console.log("hello", row.id)
     // }
+    const handleEdit = (row) => {
+        console.log("Modifier la ligne :", row)
+    }
     return (
         <>
             <h3>Mon composant Table</h3>
