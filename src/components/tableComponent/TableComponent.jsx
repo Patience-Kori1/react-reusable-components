@@ -41,6 +41,7 @@ export default function TableComponent() {
                 data= {data}
                 columns={columns}
                 onAction={handleAction}
+                onEdit={handleEdit}
             />
             <Pagination/>
         </>

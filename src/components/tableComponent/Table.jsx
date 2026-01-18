@@ -1,6 +1,6 @@
 import Thead from "./Thead"
 import Tbody from "./Tbody"
-export default function Table({data, columns, onAction}) {
+export default function Table({data, columns, onAction,  onEdit}) {
 
     return(
         <table>   
@@ -11,6 +11,7 @@ export default function Table({data, columns, onAction}) {
                 data= {data}
                 columns={columns}
                 onAction={onAction}
+                onEdit={onEdit}
             />
         </table>
     )
