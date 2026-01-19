@@ -1,7 +1,6 @@
 export default function TdataBodyAction({row, columns, onAction, onEdit}) {
-
-    return (
-        <>
+     const divActionDefault = (
+         <>
             <td>
                 <button
                     type="button"
@@ -12,5 +11,8 @@ export default function TdataBodyAction({row, columns, onAction, onEdit}) {
                 <button key={row.id} type="button" onClick={() => onAction(row)}>Dire Bonjour</button>
             </td>
         </>
+     )
+    return (
+       divActionDefault
     )
 }
