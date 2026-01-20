@@ -33,6 +33,11 @@ export default function TableComponent() {
     const handleEdit = (row) => {
         console.log("Modifier la ligne :", row)
     }
+    const divAction= (
+        <>
+            <td>Hey</td>
+        </>
+    )
     return (
         <>
             <h3>Mon composant Table</h3>
@@ -42,6 +47,7 @@ export default function TableComponent() {
                 columns={columns}
                 onAction={handleAction}
                 onEdit={handleEdit}
+                divAction={divAction}
             />
             <Pagination/>
         </>

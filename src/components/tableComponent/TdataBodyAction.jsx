@@ -1,4 +1,5 @@
-export default function TdataBodyAction({row, columns, onAction, onEdit}) {
+export default function TdataBodyAction({row, columns, onAction, onEdit, divAction}) {
+    // console.log(divAction)
      const divActionDefault = (
          <>
             <td>
@@ -12,7 +13,8 @@ export default function TdataBodyAction({row, columns, onAction, onEdit}) {
             </td>
         </>
      )
+     const displayAction =  divAction !== undefined ? divAction : divActionDefault
     return (
-       divActionDefault
+       displayAction
     )
 }
