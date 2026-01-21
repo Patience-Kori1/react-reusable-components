@@ -33,11 +33,18 @@ export default function TableComponent() {
     const handleEdit = (row) => {
         console.log("Modifier la ligne :", row)
     }
-    const divAction= (
-        <>
-            <td>Hey</td>
-        </>
-    )
+    // const divAction= (
+    //     <>
+    //         <td>Hey</td>
+    //     </>
+    // )
+     // Fonction render pour la colonne Action
+  const divAction = (row) => (
+    <td>
+      <button onClick={() => handleEdit(row)}>Modifier</button>
+      <button onClick={() => handleDelete(row)}>Supprimer</button>
+    </td>
+  )
     return (
         <>
             <h3>Mon composant Table</h3>

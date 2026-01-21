@@ -13,8 +13,5 @@ export default function TdataBodyAction({row, columns, onAction, onEdit, divActi
             </td>
         </>
      )
-     const displayAction =  divAction !== undefined ? divAction : divActionDefault
-    return (
-       displayAction
-    )
+    return divAction ? divAction(row) : divActionDefault
 }
