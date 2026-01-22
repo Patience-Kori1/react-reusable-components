@@ -43,6 +43,7 @@ export default function TableComponent() {
     <td>
       <button onClick={() => handleEdit(row)}>Modifier</button>
       <button onClick={() => handleDelete(row)}>Supprimer</button>
+      <button onClick={() => handleDelete(row)}>Supprimer</button>
     </td>
   )
     return (
