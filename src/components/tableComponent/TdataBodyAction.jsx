@@ -20,7 +20,7 @@ export default function TdataBodyAction({row, columns, onAction, onEdit, divActi
         type="button"
         onClick={() => onEdit && onEdit(keyAction)}
       >
-        {/* {textButtonEditAction || " Modifier"} */}
+        {textButtonEditAction || " Modifier"}
         Modifier
       </button>
 
