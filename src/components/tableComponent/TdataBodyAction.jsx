@@ -20,7 +20,7 @@ export default function TdataBodyAction({row, columns, onAction, onEdit, divActi
         type="button"
         onClick={() => onEdit && onEdit(keyAction)}
       >
-        {textButtonEditAction || " Modifier"}
+        {/* {textButtonEditAction || " Modifier"} */}
         Modifier
       </button>
 
@@ -33,7 +33,7 @@ export default function TdataBodyAction({row, columns, onAction, onEdit, divActi
     </td>)
 
     // S'il y a un props divAction dans App, on l'affiche sinon on affiche divActiondefault
-    const displayAction =  divAction !== undefined ? divAction : divActionDefault
+    const displayAction =  divAction(row) !== undefined ? divAction(row) : divActionDefault
     // console.log(onDelete)
   return (
     displayAction

@@ -39,13 +39,14 @@ export default function TableComponent() {
     //     </>
     // )
      // Fonction render pour la colonne Action
-  const divAction = (row) => (
-    <td>
-      <button onClick={() => handleEdit(row)}>Modifier</button>
-      <button onClick={() => handleDelete(row)}>Supprimer</button>
-      <button onClick={() => handleDelete(row)}>Supprimer</button>
-    </td>
-  )
+    const divAction = (row) => {
+      
+      <td>
+        <button onClick={() => handleEdit(row)}>Modifier</button>
+        <button onClick={() => handleDelete(row)}>Supprimer</button>
+        <button onClick={() => handleDelete(row)}>Supprimer</button>
+      </td>
+    }
     return (
         <>
             <h3>Mon composant Table</h3>
