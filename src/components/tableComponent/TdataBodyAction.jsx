@@ -1,36 +1,36 @@
 export default function TdataBodyAction({row, columns, onAction, onEdit, divAction}) {
-    // console.log(divAction)
-    //  const divActionDefault = (
-    //      <>
-    //         <td>
-    //             <button
-    //                 type="button"
-    //                 onClick={() => onEdit(row)}
-    //             >
-    //             Modifier
-    //             </button>
-    //             <button key={row.id} type="button" onClick={() => onAction(row)}>Dire Bonjour</button>
-    //         </td>
-    //     </>
-    //  )
-    // return divAction ? divAction(row) : divActionDefault
+    console.log(divAction)
+     const divActionDefault = (
+         <>
+            <td>
+                <button
+                    type="button"
+                    onClick={() => onEdit(row)}
+                >
+                Modifier
+                </button>
+                <button key={row.id} type="button" onClick={() => onAction(row)}>Supprimer</button>
+            </td>
+        </>
+     )
+    return divAction ? divAction(row) : divActionDefault
 
-    const divActionDefault = ( <td>
-      <button
-        type="button"
-        onClick={() => onEdit && onEdit(keyAction)}
-      >
-        {/* {textButtonEditAction || " Modifier"} */}
-        Modifier
-      </button>
+    // const divActionDefault = ( <td>
+    //   <button
+    //     type="button"
+    //     onClick={() => onEdit && onEdit(keyAction)}
+    //   >
+    //     {/* {textButtonEditAction || " Modifier"} */}
+    //     Modifier
+    //   </button>
 
-      <button
-        type="button"
-        onClick={() => onDelete && onDelete(keyAction)}
-      >
-        Supprimer
-      </button>
-    </td>)
+    //   <button
+    //     type="button"
+    //     onClick={() => onDelete && onDelete(keyAction)}
+    //   >
+    //     Supprimer
+    //   </button>
+    // </td>)
 
     // S'il y a un props divAction dans App, on l'affiche sinon on affiche divActiondefault
     const displayAction =  divAction(row) !== undefined ? divAction(row) : divActionDefault
