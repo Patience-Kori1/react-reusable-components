@@ -1,4 +1,4 @@
-export default function TdataBodyAction({row, columns, onAction, onEdit, divAction, textButtonEditAction}) {
+export default function TdataBodyAction({row, columns, onAction, onEdit, divAction, textButtonEditActionOne, textButtonEditActionTwo}) {
     // console.log(divAction)
      const divActionDefault = (
          <>
@@ -7,9 +7,9 @@ export default function TdataBodyAction({row, columns, onAction, onEdit, divActi
                     type="button"
                     onClick={() => onEdit(row)}
                 >
-                Modifier
+                {textButtonEditActionOne}
                 </button>
-                <button key={row.id} type="button" onClick={() => onAction(row)}>{textButtonEditAction}</button>
+                <button key={row.id} type="button" onClick={() => onAction(row)}>{textButtonEditActionTwo}</button>
             </td>
         </>
      )

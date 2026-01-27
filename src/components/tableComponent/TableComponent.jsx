@@ -48,7 +48,8 @@ export default function TableComponent() {
       </td>
       )
     }
-    const textButtonEditAction= "Supprimer"
+    const textButtonEditActionOne= "Modifier"
+    const textButtonEditActionTwo= "Supprimer"
     return (
         <>
             <h3>Mon composant Table</h3>
@@ -59,7 +60,8 @@ export default function TableComponent() {
                 onAction={handleAction}
                 onEdit={handleEdit}
                 // divAction={divAction}
-                textButtonEditAction = {textButtonEditAction}
+                textButtonEditActionOne = {textButtonEditActionOne}
+                textButtonEditActionTwo = {textButtonEditActionTwo}
             />
             <Pagination/>
         </>

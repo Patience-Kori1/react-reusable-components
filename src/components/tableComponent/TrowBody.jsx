@@ -1,7 +1,7 @@
 import TdataBody from "./TdataBody"
 import TdataBodyAction from "./TdataBodyAction"
 
-export default function TrowBody({data, columns, onAction, onEdit,divAction, textButtonEditAction}) {
+export default function TrowBody({data, columns, onAction, onEdit,divAction, textButtonEditActionOne, textButtonEditActionTwo}) {
     // console.log(data)
    
     return (
@@ -21,7 +21,8 @@ export default function TrowBody({data, columns, onAction, onEdit,divAction, tex
                         onAction={onAction}
                         onEdit={onEdit}
                         divAction={divAction}
-                        textButtonEditAction={textButtonEditAction}
+                        textButtonEditActionOne={textButtonEditActionOne}
+                        textButtonEditActionTwo ={textButtonEditActionTwo}
                     />
                 </tr>)
                 )

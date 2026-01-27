@@ -1,5 +1,5 @@
 import TrowBody from "./TrowBody"
-export default function Tbody({data, columns, onAction, onEdit, divAction, textButtonEditAction}) {
+export default function Tbody({data, columns, onAction, onEdit, divAction, textButtonEditActionOne, textButtonEditActionTwo}) {
     return (
         <tbody>
             <TrowBody
@@ -8,7 +8,8 @@ export default function Tbody({data, columns, onAction, onEdit, divAction, textB
                 onAction={onAction}
                 onEdit={onEdit}
                 divAction={divAction}
-                textButtonEditAction={textButtonEditAction}
+                textButtonEditActionOne={textButtonEditActionOne}
+                textButtonEditActionTwo= {textButtonEditActionTwo}
             />
         </tbody>
     )
