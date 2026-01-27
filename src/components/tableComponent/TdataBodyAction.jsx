@@ -1,5 +1,5 @@
-export default function TdataBodyAction({row, columns, onAction, onEdit, divAction}) {
-    console.log(divAction)
+export default function TdataBodyAction({row, columns, onAction, onEdit, divAction, textButtonEditAction}) {
+    // console.log(divAction)
      const divActionDefault = (
          <>
             <td>
@@ -9,7 +9,7 @@ export default function TdataBodyAction({row, columns, onAction, onEdit, divActi
                 >
                 Modifier
                 </button>
-                <button key={row.id} type="button" onClick={() => onAction(row)}>Supprimer</button>
+                <button key={row.id} type="button" onClick={() => onAction(row)}>{textButtonEditAction}</button>
             </td>
         </>
      )

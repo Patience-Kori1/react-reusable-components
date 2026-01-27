@@ -39,15 +39,16 @@ export default function TableComponent() {
     //     </>
     // )
      // Fonction render pour la colonne Action
-  const divAction = (row) => {
-    return(
-    <td>
-      <button onClick={() => handleEdit(row)}>Modifier</button>
-      <button onClick={() => handleDelete(row)}>Supprimer</button>
-      
-    </td>
-    )
-  }
+    const divAction = (row) => {
+      return(
+      <td>
+        <button onClick={() => handleEdit(row)}>Modifier</button>
+        <button onClick={() => handleDelete(row)}>Supprimer</button>
+        
+      </td>
+      )
+    }
+    const textButtonEditAction= "Supprimer"
     return (
         <>
             <h3>Mon composant Table</h3>
@@ -58,6 +59,7 @@ export default function TableComponent() {
                 onAction={handleAction}
                 onEdit={handleEdit}
                 // divAction={divAction}
+                textButtonEditAction = {textButtonEditAction}
             />
             <Pagination/>
         </>
