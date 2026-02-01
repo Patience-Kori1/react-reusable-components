@@ -50,10 +50,13 @@ export default function TableComponent() {
     }
     const textButtonEditActionOne= "Modifier"
     const textButtonEditActionTwo= "Supprimer"
+    const placeholderTextSearchBar = "Rechercher"
     return (
         <>
             <h3>Mon composant Table</h3>
-            <SearchBar/>
+            <SearchBar
+              placeholder={placeholderTextSearchBar || "Rechercher un stagiaire..."}
+            />
             <Table
                 data= {data}
                 columns={columns}

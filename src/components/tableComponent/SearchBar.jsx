@@ -1,8 +1,11 @@
-export default function SearchBar() {
+export default function SearchBar({placeholder}) {
     return(
         <>
             <label htmlFor="search">Recherchez : </label>
-            <input type="text" />
+            <input 
+                type="text" 
+                placeholder={placeholder}
+            />
         </>
     )
 }
