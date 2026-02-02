@@ -18,7 +18,11 @@ export default function TableComponent({
     { key: "intern_member_id", label: "ID STAGIAIRE" },
     { key: "status", label: "AVANCÉE DU DOSSIER" },
     { key: "action", label: "ACTION" },
-  ]
+  ],
+  textButtonEditActionOne= "Modifier...",
+  textButtonEditActionTwo= "Supprimer...",
+  placeholderTextSearchBar = "Rechercher....",
+  textTableTitle = "Mon composant Table",
 }) 
   {
     const [data, setData] = useState(initialData)
@@ -49,10 +53,7 @@ export default function TableComponent({
       </td>
       )
     }
-    const textButtonEditActionOne= "Modifier..."
-    const textButtonEditActionTwo= "Supprimer..."
-    const placeholderTextSearchBar = "Rechercher...."
-    const textTableTitle = "Mon composant Table"
+
     return (
       <>
         <h3>{textTableTitle || "Liste des stagiaires"}</h3>
