@@ -6,6 +6,8 @@ export default function SearchBar({placeholder}) {
                 type="text" 
                 placeholder={placeholder}
             />
+
+            <button>Rechercher</button>
         </>
     )
 }

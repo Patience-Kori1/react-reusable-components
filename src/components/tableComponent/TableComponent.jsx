@@ -21,7 +21,7 @@ export default function TableComponent({
   ],
   textButtonEditActionOne= "Modifier...",
   textButtonEditActionTwo= "Supprimer...",
-  placeholderTextSearchBar = "Rechercher....",
+  placeholderTextSearchBar = "Entrer le mot",
   textTableTitle = "Mon composant Table",
 }) 
   {
