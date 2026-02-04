@@ -23,6 +23,7 @@ export default function TableComponent({
   textButtonEditActionTwo= "Supprimer...",
   placeholderTextSearchBar = "Entrer le mot",
   textTableTitle = "Mon composant Table",
+  textButtonSearchBar = "Rechercher"
 }) 
   {
     const [data, setData] = useState(initialData)
@@ -59,6 +60,7 @@ export default function TableComponent({
         <h3>{textTableTitle || "Liste des stagiaires"}</h3>
         <SearchBar
           placeholder={placeholderTextSearchBar || "Rechercher un stagiaire..."}
+          textButtonSearchBar={textButtonSearchBar}
         />
         <Table
             data= {data}

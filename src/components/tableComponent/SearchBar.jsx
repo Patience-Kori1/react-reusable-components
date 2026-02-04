@@ -1,4 +1,4 @@
-export default function SearchBar({placeholder}) {
+export default function SearchBar({placeholder, textButtonSearchBar}) {
     return(
         <>
             <label htmlFor="search">Recherchez : </label>
@@ -7,7 +7,7 @@ export default function SearchBar({placeholder}) {
                 placeholder={placeholder}
             />
 
-            <button>Rechercher</button>
+            <button>{textButtonSearchBar}</button>
         </>
     )
 }
