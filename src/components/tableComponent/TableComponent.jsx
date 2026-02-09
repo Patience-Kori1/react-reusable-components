@@ -23,7 +23,8 @@ export default function TableComponent({
   textButtonEditActionTwo= "Supprimer...",
   placeholderTextSearchBar = "Entrer le mot",
   textTableTitle = "Mon composant Table",
-  textButtonSearchBar = "Rechercher"
+  textButtonSearchBar = "Rechercher",
+  textButtonPaginationOne = "Précédent"
 }) 
   {
     const [data, setData] = useState(initialData)
@@ -63,15 +64,17 @@ export default function TableComponent({
           textButtonSearchBar={textButtonSearchBar}
         />
         <Table
-            data= {data}
-            columns={columns}
-            onAction={handleAction}
-            onEdit={handleEdit}
-            // divAction={divAction}
-            textButtonEditActionOne = {textButtonEditActionOne}
-            textButtonEditActionTwo = {textButtonEditActionTwo}
+          data= {data}
+          columns={columns}
+          onAction={handleAction}
+          onEdit={handleEdit}
+          // divAction={divAction}
+          textButtonEditActionOne = {textButtonEditActionOne}
+          textButtonEditActionTwo = {textButtonEditActionTwo}
         />
-        <Pagination/>
+        <Pagination
+          textButtonPaginationOne={textButtonPaginationOne}
+        />
       </>
     )
   }

@@ -1,7 +1,7 @@
-export default function Pagination() {
+export default function Pagination({textButtonPaginationOne}) {
     return(
         <div>
-            <button>precedent  </button>
+            <button>{textButtonPaginationOne || "Liste précédent"} </button>
             <button>suivant</button>
         </div>
     )
